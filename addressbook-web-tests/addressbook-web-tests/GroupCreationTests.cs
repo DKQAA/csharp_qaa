@@ -57,7 +57,7 @@ namespace WebAddressbookTests
             driver.FindElement(By.Name("group_header")).Clear();
             driver.FindElement(By.Name("group_header")).SendKeys("Bada");
             driver.FindElement(By.Name("group_footer")).Clear();
-            driver.FindElement(By.Name("group_footer")).SendKeys("Bing");
+            driver.FindElement(By.Name("group_footer")).SendKeys("Boom");
             driver.FindElement(By.Name("submit")).Click();
             driver.FindElement(By.LinkText("group page")).Click();
             driver.FindElement(By.LinkText("Logout")).Click();
