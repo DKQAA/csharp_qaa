@@ -11,13 +11,12 @@ using OpenQA.Selenium.Support.UI;
 
 namespace WebAddressbookTests
 {
-    class TestBase
+    public class TestBase
     {
         protected IWebDriver driver;
         private StringBuilder verificationErrors;
         protected string baseURL;
-        private bool acceptNextAlert = true;
-
+   
         [SetUp]
         public void SetupTest()
         {
@@ -73,10 +72,6 @@ namespace WebAddressbookTests
         protected void SubmitGroupCreation()
         {
             driver.FindElement(By.Name("submit")).Click();
-        }
-        protected void ReturnToGroupPage()
-        {
-            driver.FindElement(By.LinkText("group page")).Click();
         }
         protected void Logout()
         {
